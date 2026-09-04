@@ -111,7 +111,10 @@ python rag.py
 * **Prompt-Injection Defense:** Retrieved contexts are isolated within strict XML tags (`<context>...</context>`). The system prompt explicitly commands the LLM to treat the context as passive data and ignore any adversarial directives injected into the source documents.
 * **Memory-Safe Vector Operations:** Embeddings are kept entirely in RAM during execution. No unencrypted `.pkl` files or raw vectors are written to disk, preventing embedding inversion attacks and unsafe deserialization.
 * **Interactive Chat Loop:** Allows continuous Q&A with the ingested document until the user exits the program.
-
+---
+1. Clone this repository.
+2. Create a local file named `.env` in the root folder.
+3. Copy the contents of `.env.example` into your `.env` file and add your own personal Groq API key.
 ---
 
 ## 💻 Example Usage
